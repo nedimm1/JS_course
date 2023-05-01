@@ -1,5 +1,7 @@
-let js = 'cool';
-
-if (js === 'cool') alert("js is cool");
-
 console.log(50 + 50 - 40);
+
+let name = "Nedim";
+let age = 20;
+
+console.log("my name is: ", name, "i am", age, "years old")
+
