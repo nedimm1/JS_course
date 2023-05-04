@@ -11,8 +11,7 @@ let continent = "Europe";
 
 let population = "8.6 milion"
 
-console.log(country, continent, population)
-*/
+console.log(country, continent, population);
 
 let isIsland = false;
 
@@ -26,4 +25,14 @@ console.log(typeof isIsland)
 console.log(typeof language)
 console.log(typeof population)
 console.log(typeof country)
+*/
 
+let languagesAlsoSpoken;
+
+languagesAlsoSpoken = "serbian, bosnian and croatian";
+
+const nativeLanguage = "serbian";
+
+var otherLanguages;
+
+otherLanguages = "serbian", "bosnian", "croatian"
