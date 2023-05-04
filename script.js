@@ -25,7 +25,7 @@ console.log(typeof isIsland)
 console.log(typeof language)
 console.log(typeof population)
 console.log(typeof country)
-*/
+
 
 let languagesAlsoSpoken;
 
@@ -36,3 +36,13 @@ const nativeLanguage = "serbian";
 var otherLanguages;
 
 otherLanguages = "serbian", "bosnian", "croatian"
+*/
+
+let serbiaPopulation = 8639112;
+
+let halfOfSerbia = serbiaPopulation / 2
+
+console.log(halfOfSerbia)
+
+
+
