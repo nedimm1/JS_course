@@ -44,5 +44,7 @@ let halfOfSerbia = serbiaPopulation / 2
 
 console.log(halfOfSerbia)
 
+serbiaPopulation++;
 
+console.log(serbiaPopulation)
 
