@@ -42,9 +42,12 @@ let serbiaPopulation = 8639112;
 
 let halfOfSerbia = serbiaPopulation / 2
 
-console.log(halfOfSerbia)
+console.log(halfOfSerbia);
 
 serbiaPopulation++;
 
-console.log(serbiaPopulation)
+console.log(serbiaPopulation);
 
+let finlandPopulation = 6000000;
+
+console.log(serbiaPopulation > finlandPopulation);
