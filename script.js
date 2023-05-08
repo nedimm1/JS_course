@@ -40,14 +40,18 @@ otherLanguages = "serbian", "bosnian", "croatian"
 
 let serbiaPopulation = 8639112;
 
-let halfOfSerbia = serbiaPopulation / 2
-
-console.log(halfOfSerbia);
+let halfOfSerbia = serbiaPopulation / 2;
 
 serbiaPopulation++;
 
+let finlandPopulation = 565234;
+
+let averagePopulation = 39999999;
+
 console.log(serbiaPopulation);
 
-let finlandPopulation = 6000000;
+console.log(halfOfSerbia);
+
+console.log(serbiaPopulation > averagePopulation);
 
 console.log(serbiaPopulation > finlandPopulation);
