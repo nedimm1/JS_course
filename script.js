@@ -36,7 +36,7 @@ const nativeLanguage = "serbian";
 var otherLanguages;
 
 otherLanguages = "serbian", "bosnian", "croatian"
-*/
+
 
 let serbiaPopulation = 8639112;
 
@@ -55,3 +55,24 @@ console.log(halfOfSerbia);
 console.log(serbiaPopulation > averagePopulation);
 
 console.log(serbiaPopulation > finlandPopulation);
+*/
+
+let markWeight = 78;
+
+let markHight = 1.69;
+
+let jhonWeight = 92;
+
+let jhonHight = 1.88;
+
+let markBMI = markWeight / markHight ** 2;
+
+let jhonBMI = jhonWeight / (jhonHight * jhonHight);
+
+console.log(jhonBMI);
+
+console.log(markBMI);
+
+let markHigherBMI = markBMI > jhonBMI
+
+console.log(markHigherBMI);
