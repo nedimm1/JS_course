@@ -55,7 +55,7 @@ console.log(halfOfSerbia);
 console.log(serbiaPopulation > averagePopulation);
 
 console.log(serbiaPopulation > finlandPopulation);
-*/
+
 
 let markWeight = 78;
 
@@ -76,3 +76,16 @@ console.log(markBMI);
 let markHigherBMI = markBMI > jhonBMI
 
 console.log(markHigherBMI);
+*/
+
+const name = "Nedim";
+
+const occupation = "student";
+
+const schoolName = "Madrasa in Novi pazar";
+
+const currentYear = 2023;
+
+const birthyear = 2008;
+
+console.log("hi i am " + name, ", i am a " + occupation, "at a " + schoolName, ", and i am " + (currentYear - birthyear), "years old");
