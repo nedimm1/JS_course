@@ -76,7 +76,7 @@ console.log(markBMI);
 let markHigherBMI = markBMI > jhonBMI
 
 console.log(markHigherBMI);
-*/
+
 
 const name = "Nedim";
 
@@ -93,3 +93,12 @@ console.log("hi i am " + name, ", i am a " + occupation, "at a " + schoolName, "
 console.log(`hi i am ${name}, i am a ${occupation} at a ${schoolName}, and i am ${currentYear - birthyear} years old`)
 
 console.log("a\n\sentance\n\with\n\spaces")
+*/
+
+const age = 15;
+let yearsLeft = 18;
+if(age >= 18){
+    console.log("U can drive")
+}else{
+    console.log(`u are too young, you have to wait ${yearsLeft - age} more years`)
+}
