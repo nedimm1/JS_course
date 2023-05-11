@@ -93,7 +93,7 @@ console.log("hi i am " + name, ", i am a " + occupation, "at a " + schoolName, "
 console.log(`hi i am ${name}, i am a ${occupation} at a ${schoolName}, and i am ${currentYear - birthyear} years old`)
 
 console.log("a\n\sentance\n\with\n\spaces")
-*/
+
 
 const age = 15;
 
@@ -111,3 +111,22 @@ if(birthyear <= 2000){
     century = 21;
 }
 console.log(century);
+*/
+
+let markWeight = 78;
+
+let markHight = 1.69;
+
+let jhonWeight = 92;
+
+let jhonHight = 1.88;
+
+let markBMI = markWeight / markHight ** 2;
+
+let jhonBMI = jhonWeight / (jhonHight * jhonHight);
+
+if(markBMI > jhonBMI){
+    console.log(`Marks BMI(${markBMI}) is higher then Jhons BMI(${jhonBMI})`)
+}else{
+    console.log(`Jhons BMI(${jhonBMI}) is higher than Marks BMI(${markBMI})`)
+}
