@@ -130,7 +130,7 @@ if(markBMI > jhonBMI){
 }else{
     console.log(`Jhons BMI(${jhonBMI}) is higher than Marks BMI(${markBMI})`)
 }
-*/
+
 
 let num = "2008";
 
@@ -141,3 +141,14 @@ console.log(num + 15);
 console.log(Number(num) + 15);
 
 console.log(String(25), 25);
+
+*/
+
+console.log("20" + "20" - 12);
+
+console.log('20' / '5');
+
+let n = '1' + '1';
+n = n - 1;
+
+console.log(n);
