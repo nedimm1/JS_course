@@ -160,9 +160,16 @@ console.log(Boolean('me'))
 console.log(Boolean({}))
 console.log(Boolean(''))
 
-money = 0;
+ let money = 0;
 if (money) {
     console.log('dont spend too much')
 } else { 
     console.log('no money :(') 
+}
+
+let hight;
+if(hight){
+    console.log("hight is defined")
+}else{
+    console.log("hight is not defined")
 }
