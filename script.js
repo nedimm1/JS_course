@@ -181,3 +181,9 @@ let age = 18;
 if(age === 18) console.log("ur an adualt"); //strict
 
 if(age == '18') console.log("ur an adualt"); //loose
+
+let myAge = Number(prompt("how old are u? "));
+
+if(myAge === 15) {
+    console.log("ur 15");
+}
