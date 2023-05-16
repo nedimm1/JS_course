@@ -152,7 +152,7 @@ let n = '1' + '1';
 n = n - 1;
 
 console.log(n);
-*/
+
 
 console.log(Boolean(0));
 console.log(Boolean(undefined))
@@ -173,3 +173,11 @@ if(hight){
 }else{
     console.log("hight is not defined")
 }
+
+*/
+
+let age = 18;
+
+if(age === 18) console.log("ur an adualt"); //strict
+
+if(age == '18') console.log("ur an adualt"); //loose
