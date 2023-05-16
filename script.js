@@ -186,4 +186,6 @@ let myAge = Number(prompt("how old are u? "));
 
 if(myAge === 15) {
     console.log("ur 15");
-}
+}else if(myAge === 18){
+    console.log("ur 18 and an adualt");
+}else{console.log(`ur ${myAge}`)};
