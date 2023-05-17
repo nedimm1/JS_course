@@ -174,7 +174,6 @@ if(hight){
     console.log("hight is not defined")
 }
 
-*/
 
 let age = 18;
 
@@ -189,3 +188,16 @@ if(myAge === 15) {
 }else if(myAge === 18){
     console.log("ur 18 and an adualt");
 }else{console.log(`ur ${myAge}`)};
+*/
+
+let NedHasLiscence = true;
+
+let NedCanSeeGood = false;
+
+let NedIsTired = true
+
+if(NedHasLiscence && NedCanSeeGood && !NedIsTired){
+    console.log("Ned can drive");
+}else{
+    console.log("Ned cant drive");
+}
