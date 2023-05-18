@@ -203,18 +203,20 @@ if(NedHasLiscence && NedCanSeeGood && !NedIsTired){
 }
 */
 
-let teamOneScore = (96 + 108 + 89) / 3;
+let teamOneScore = (97 + 112 + 81) / 3;
 
-let teamTwoScore = (88 + 91 + 110) / 3;
+let teamTwoScore = (109 + 95 + 86) / 3;
 
 console.log(teamOneScore);
 
 console.log(teamTwoScore);
 
-if(teamOneScore > teamTwoScore){
+if(teamOneScore > teamTwoScore && teamOneScore >= 100){
     console.log("team one wins")
-}else if(teamTwoScore > teamOneScore){
+}else if(teamTwoScore > teamOneScore && teamTwoScore >=100){
     console.log("team two wins")
-}else if(teamOneScore === teamTwoScore){
-    console.log("its a draw")
+}else if(teamOneScore === teamTwoScore && teamOneScore >= 100 && teamTwoScore >= 100){
+    console.log("both win")
+}else{
+    console.log('no one wins')
 }
