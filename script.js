@@ -201,7 +201,7 @@ if(NedHasLiscence && NedCanSeeGood && !NedIsTired){
 }else{
     console.log("Ned cant drive");
 }
-*/
+
 
 let teamOneScore = (97 + 112 + 81) / 3;
 
@@ -219,4 +219,33 @@ if(teamOneScore > teamTwoScore && teamOneScore >= 100){
     console.log("both win")
 }else{
     console.log('no one wins')
+}
+
+*/
+
+const day = 'thursday';
+
+switch(day) {
+    case 'monday':
+        console.log('its monday');
+        break;
+    case 'tuesday':
+        console.log("its tuesday");
+        break;
+    case 'wednesday':
+        console.log("its wednesday");
+        break;
+    case 'thursday':
+        break;
+    case 'friday' :
+        console.log("its friday");
+        break;
+    case 'saturday':
+        console.log("its saturday");
+        break;
+    case 'sunday':
+        console.log("its sunday");
+        break;
+    default:
+        console.log("thats not a day");                
 }
