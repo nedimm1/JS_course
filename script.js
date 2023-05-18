@@ -188,7 +188,7 @@ if(myAge === 15) {
 }else if(myAge === 18){
     console.log("ur 18 and an adualt");
 }else{console.log(`ur ${myAge}`)};
-*/
+
 
 let NedHasLiscence = true;
 
@@ -200,4 +200,21 @@ if(NedHasLiscence && NedCanSeeGood && !NedIsTired){
     console.log("Ned can drive");
 }else{
     console.log("Ned cant drive");
+}
+*/
+
+let teamOneScore = (96 + 108 + 89) / 3;
+
+let teamTwoScore = (88 + 91 + 110) / 3;
+
+console.log(teamOneScore);
+
+console.log(teamTwoScore);
+
+if(teamOneScore > teamTwoScore){
+    console.log("team one wins")
+}else if(teamTwoScore > teamOneScore){
+    console.log("team two wins")
+}else if(teamOneScore === teamTwoScore){
+    console.log("its a draw")
 }
