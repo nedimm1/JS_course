@@ -221,8 +221,6 @@ if(teamOneScore > teamTwoScore && teamOneScore >= 100){
     console.log('no one wins')
 }
 
-*/
-
 const day = 'thursday';
 
 switch(day) {
@@ -249,3 +247,8 @@ switch(day) {
     default:
         console.log("thats not a day");                
 }
+*/
+
+let age = 15;
+age >= 18 ? console.log("i can drive") :
+console.log("i cant drive")
