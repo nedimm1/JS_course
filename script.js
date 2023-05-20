@@ -265,3 +265,5 @@ if(age >= 18){
 }
 
 console.log(driverLiscance2);
+
+console.log(`i ${age >= 18 ? "have one" : "dont have one"}`)
