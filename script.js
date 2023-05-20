@@ -250,5 +250,9 @@ switch(day) {
 */
 
 let age = 15;
-age >= 18 ? console.log("i can drive") :
-console.log("i cant drive")
+// age >= 18 ? console.log("i can drive") :
+// console.log("i cant drive")
+
+const driverLiscance = age >= 18 ? "i have one" : "i dont have one";
+
+console.log(driverLiscance);
