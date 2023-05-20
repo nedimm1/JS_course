@@ -256,3 +256,12 @@ let age = 15;
 const driverLiscance = age >= 18 ? "i have one" : "i dont have one";
 
 console.log(driverLiscance);
+
+let driverLiscance2;
+if(age >= 18){
+    driverLiscance2 = "i have one";
+}else{
+    driverLiscance2 = "i dont have one";
+}
+
+console.log(driverLiscance2);
