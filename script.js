@@ -247,7 +247,7 @@ switch(day) {
     default:
         console.log("thats not a day");                
 }
-*/
+
 
 let age = 15;
 // age >= 18 ? console.log("i can drive") :
@@ -267,3 +267,12 @@ if(age >= 18){
 console.log(driverLiscance2);
 
 console.log(`i ${age >= 18 ? "have one" : "dont have one"}`)
+*/
+
+
+const bill = 275;
+
+const tip = bill <= 300 && bill >= 50 ? console.log(`total is ${bill} you should tip ${bill * 0.15}`) :
+ console.log(`total is ${bill} you should tip ${bill * 0.2}`);
+
+
