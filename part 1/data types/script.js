@@ -6,7 +6,7 @@ let population = 8639112; //int = numbers
 
 let country = "Serbia"; //string = letters and symbols
 
-let coastline = null; //null an empty value
+let coastline = null; //null used to intentualy make something an empty value
 
 console.log(typeof isIsland)
 console.log(typeof language)
