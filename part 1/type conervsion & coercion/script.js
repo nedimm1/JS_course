@@ -1,3 +1,7 @@
+//type conversion is when we manually converte one type to another
+//type coercion is when javascript atomatically converts types behind the scenes when its nesecery
+
+//type conversion:
 let num = "2008";
 
 console.log(Number(num), num);
@@ -9,7 +13,7 @@ console.log(Number(num) + 15);
 console.log(String(25), 25);
 
 
-
+//type coercion:
 console.log("20" + "20" - 12);
 
 console.log('20' / '5');
