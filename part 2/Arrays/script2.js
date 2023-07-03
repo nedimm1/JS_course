@@ -19,11 +19,11 @@ const familyMembers = ['Dad', 'mom', 'brother'];
 
 //second example of an array:
 
-const years = new Array(1999, 2008, 2020)
+const y = new Array(1999, 2008, 2020)
 
 //and now we can print all of this values at once
 console.log(familyMembers);
-console.log(years);
+console.log(y);
 
 //we can also print specific values from thees arrays:
 console.log(familyMembers[1], familyMembers[0])
@@ -45,3 +45,19 @@ const age = 15;
 const nedim = [name, lastName, age, familyMembers]
 
 console.log(nedim)
+
+//using arrays with funtions: 
+
+const years = [2008, 2007, 2006, 2005];
+
+const calcAge = (birthYear) => {
+    return 2023 - birthYear
+}
+
+const age1 = calcAge(years[0])
+
+console.log(age1);
+
+//we can also make arrays out of function calls:
+const ages = [calcAge(years[3]), calcAge(years[2]), calcAge(years[1])]
+console.log(ages)
