@@ -38,6 +38,8 @@ nedim.lastName = 'muminovic';
 
 nedim['twitter'] = '@familijaNM'
 
+nedim.familyMembers.push('brother2')
+
 const interestedIn = prompt('what would you like to know about Nedim?')
 
 if(nedim[interestedIn]){
@@ -47,3 +49,6 @@ if(nedim[interestedIn]){
 }else{
     console.log('cant provide you that information')
 }
+
+console.log(`${nedim.name} has ${nedim.familyMembers.length} family members, the oldest member in
+his family is his ${nedim.familyMembers[1]}`)
