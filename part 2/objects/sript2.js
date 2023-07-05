@@ -19,3 +19,21 @@ const nedim = {
     familyMembers: ['mom', 'dad', 'brother']
 }
 //while objects properties have meaningful names and can store any type of value (PRIMITIVE values)
+
+//console logging the object
+console.log(nedim)
+
+//there are tow ways we can log certian properties to the console:
+
+//1.Dot Notation:
+console.log(nedim.name)
+
+//2.Brackets notation:
+
+console.log(nedim['name'])
+
+//we can also add another property to the object
+
+nedim.lastName = 'muminovic';
+
+nedim['twitter'] = '@familijaNM'
