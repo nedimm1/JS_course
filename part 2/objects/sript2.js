@@ -37,3 +37,13 @@ console.log(nedim['name'])
 nedim.lastName = 'muminovic';
 
 nedim['twitter'] = '@familijaNM'
+
+const interestedIn = prompt('what would you like to know about Nedim?')
+
+if(nedim[interestedIn]){
+
+  console.log(nedim[interestedIn])
+
+}else{
+    console.log('cant provide you that information')
+}
