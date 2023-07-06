@@ -10,11 +10,21 @@ const nedim2 = {
         return 2023 - birthYear
     }*/
 
-    calcAge: function(){
+  /*  calcAge: function(){
         return 2023 - this.birthYear // the 'this' keyword provides a way to access and operate 
         //on the properties and methods of the object that owns or calls the function.
+    }*/
+
+    calcAge: function(){
+      this.age = 2023 - this.birthYear
+      return this.age;
     }
 }
 
-console.log(nedim2.calcAge());//we can even change the name of the function and it will work the same
-//console.log(nedim['calcAge'](2008));
+console.log(nedim2.calcAge())
+
+console.log(nedim2.age);//we can even change the name of the function and it will work the same
+//console.log(nedim['calcAge'](2008))
+console.log(nedim2.age)//and now i can reuse the result by just typing this
+console.log(nedim2.age)
+console.log(nedim2.age)
