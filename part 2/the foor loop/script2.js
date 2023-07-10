@@ -32,7 +32,7 @@ for(let messageNumber = 1; messageNumber <= 10; messageNumber++){
 
 //looping arrays
 
-const me = ['Nedim', 'Muminovic', 2023 - 2008, ['mom', 'dad', 'brother'], true]
+const me = ['Nedim', 'Muminovic', 2023 - 2008, ['mom', 'dad', 'brother'], true, 'high school student']
 
 const types = [];
 
@@ -63,6 +63,19 @@ console.log(ages)
 console.log('---ONLY STRINGS---')
 for(let i = 0; i < me.length; i++){
     if(typeof me[i] !== 'string') continue;
+
+    console.log(me[i])
+}
+
+//break:
+
+//The break statement is used to exit or terminate a loop prematurely.
+//This can be useful when you want to stop the loop 
+//when a certain condition is met or when you want to exit a loop early.
+
+console.log('---STOPPED WHEN NUMBERE---')
+for(let i = 0; i < me.length; i++){
+    if(typeof me[i] === 'number') break; 
 
     console.log(me[i])
 }
