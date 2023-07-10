@@ -32,8 +32,8 @@ for(let messageNumber = 1; messageNumber <= 10; messageNumber++){
 
 //looping arrays
 
-const me = ['Nedim', 'Muminovic', 2023 - 2008, ['mom', 'dad', 'brother']]
+const me = ['Nedim', 'Muminovic', 2023 - 2008, ['mom', 'dad', 'brother'], true]
 
-for(let i = 0; i < 4; i++){
-    console.log(me[i]);
+for(let i = 0; i < me.length; i++){
+    console.log(me[i], typeof me[i]);
 }
