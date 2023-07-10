@@ -34,6 +34,12 @@ for(let messageNumber = 1; messageNumber <= 10; messageNumber++){
 
 const me = ['Nedim', 'Muminovic', 2023 - 2008, ['mom', 'dad', 'brother'], true]
 
+const types = [];
+
 for(let i = 0; i < me.length; i++){
     console.log(me[i], typeof me[i]);
+
+    types[i] = typeof me[i];
 }
+
+console.log(types);
