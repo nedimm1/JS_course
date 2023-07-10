@@ -29,3 +29,11 @@ for(let messageNumber = 1; messageNumber <= 10; messageNumber++){
 //"messageNumkber++" 
 //This step typically involves updating the loop variable, 
 //such as incrementing or decrementing its value. 
+
+//looping arrays
+
+const me = ['Nedim', 'Muminovic', 2023 - 2008, ['mom', 'dad', 'brother']]
+
+for(let i = 0; i < 4; i++){
+    console.log(me[i]);
+}
