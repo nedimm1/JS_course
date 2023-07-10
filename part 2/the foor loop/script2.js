@@ -44,3 +44,12 @@ for(let i = 0; i < me.length; i++){
 }
 
 console.log(types);
+
+const years = [1969, 1991, 1999, 2000, 2008]
+const ages = [];
+
+for(let i = 0; i < years.length; i++){
+    ages.push(2023 - years[i])
+}
+
+console.log(ages)
