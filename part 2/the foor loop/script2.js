@@ -53,3 +53,16 @@ for(let i = 0; i < years.length; i++){
 }
 
 console.log(ages)
+
+//continue and break statements
+
+//continue:
+//The continue statement is used within loops
+//to skip the current iteration and move on to the next iteration
+
+console.log('---ONLY STRINGS---')
+for(let i = 0; i < me.length; i++){
+    if(typeof me[i] !== 'string') continue;
+
+    console.log(me[i])
+}
