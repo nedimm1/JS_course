@@ -39,7 +39,8 @@ const types = [];
 for(let i = 0; i < me.length; i++){
     console.log(me[i], typeof me[i]);
 
-    types[i] = typeof me[i];
+    //types[i] = typeof me[i];
+    types.push(typeof me[i])
 }
 
 console.log(types);
