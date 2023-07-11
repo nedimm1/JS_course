@@ -79,3 +79,11 @@ for(let i = 0; i < me.length; i++){
 
     console.log(me[i])
 }
+
+
+//looping an array backwards:
+
+console.log('---Backwards loop---')
+for(let i = me.length - 1; i >= 0; i--){
+    console.log(me[i])
+}
