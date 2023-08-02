@@ -24,6 +24,9 @@ document.querySelector('.check').addEventListener('click', function () {
             score = score - 1;
             document.querySelector('.score').textContent = score
         }else{
+            document.querySelector('body').style.backgroundColor = '#fa2d2d'
+
+            document.querySelector('.number').style.width = '30rem';
             document.querySelector('.message').textContent = 'you lost the game'
             document.querySelector('.score').textContent = 0
         }
@@ -34,6 +37,10 @@ document.querySelector('.check').addEventListener('click', function () {
             score = score - 1;
             document.querySelector('.score').textContent = score
         }else{
+            document.querySelector('body').style.backgroundColor = '#fa2d2d'
+
+            document.querySelector('.number').style.width = '30rem';
+
             document.querySelector('.message').textContent = 'you lost the game'
             document.querySelector('.score').textContent = 0
         }
