@@ -2,6 +2,8 @@
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1
 
+let highScore = 0;
+
 function newSN(){
     return secretNumber = Math.trunc(Math.random() * 20) + 1
 }
@@ -22,6 +24,7 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('body').style.backgroundColor = '#60b347'
 
         document.querySelector('.number').style.width = '30rem';
+        
     } else if (guess > secretNumber) {
         if(score > 1){
             document.querySelector('.message').textContent = 'too high'
@@ -47,6 +50,8 @@ document.querySelector('.check').addEventListener('click', function () {
 
             document.querySelector('.message').textContent = 'you lost the game'
             document.querySelector('.score').textContent = 0
+
+            document.querySelector('.number').textContent = secretNumber
         }
     }
 }
