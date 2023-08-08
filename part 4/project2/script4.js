@@ -10,5 +10,7 @@ const btnsShowModal = document.querySelectorAll('.show-modal');
 //using the normal queryselector would just console log the first element with that class
 
 for(let i = 0; i < btnsShowModal.length; i++){
-    console.log(btnsShowModal[i].textContent)
+    btnsShowModal[i].addEventListener('click', function(){
+        console.log('button clicked')
+    })
 }
