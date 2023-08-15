@@ -15,4 +15,7 @@ const btnHold = document.querySelector('.btn--hold');
 btnRoll.addEventListener('click', function(){
     let randomNum = Math.trunc(Math.random() * 6) + 1
     console.log(randomNum)
+
+    diceEL.classList.remove('hidden')
+    diceEL.src = `number-${randomNum}.PNG`
 })
