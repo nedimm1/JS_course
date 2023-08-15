@@ -11,3 +11,8 @@ const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 
 const btnHold = document.querySelector('.btn--hold');
+
+btnRoll.addEventListener('click', function(){
+    let randomNum = Math.trunc(Math.random() * 6) + 1
+    console.log(randomNum)
+})
