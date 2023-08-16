@@ -1,5 +1,10 @@
 'use strict';
 
+
+const player0El = document.querySelector('.player--0');
+
+const player1El = document.querySelector('.player--1');
+
 const score0 = document.querySelector('#score--0');
 
 const score1 = document.querySelector("score--1");
@@ -16,17 +21,28 @@ const btnRoll = document.querySelector('.btn--roll');
 
 const btnHold = document.querySelector('.btn--hold');
 
-let curentScore = 0
+const scores = [0, 0]
 
-btnRoll.addEventListener('click', function(){
+let activePlayer = 0;
+
+let currentScore = 0
+
+btnRoll.addEventListener('click', function () {
     let randomNum = Math.trunc(Math.random() * 6) + 1
     console.log(randomNum)
 
     diceEL.classList.remove('hidden')
     diceEL.src = `number-${randomNum}.PNG`
 
-    if(randomNum !== 1){
-        curentScore += randomNum
+    if (randomNum !== 1) {
+        currentScore += randomNum
+        document.getElementById(`current--${activePlayer}`).textContent = currentScore
         curentScore0EL.textContent = curentScore
+    }else{
+        document.getElementById(`current--${activePlayer}`).textContent = 0
+        currentScore = 0
+        activePlayer = activePlayer === 0 ? 1 : 0
+        player0El.classList.toggle('player--active')
+        player1El.classList.toggle('player--active')
     }
 })
