@@ -17,5 +17,11 @@ const [x, y, z] = arr;
 console.log(x, y, z);
 console.log(arr)
 
-const [first, second] = resturant.categories
+let [first, second] = resturant.categories
+console.log(first, second)
+
+//switching elements without destructing
+const temp = first;
+first = second;
+second = temp;
 console.log(first, second)
