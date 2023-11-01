@@ -29,6 +29,6 @@ let main, secondery;
 
 console.log(main, secondery);
 
-// Call the order function and log the result
-const orderResult = resturant.order(2, 0);
-console.log(orderResult);
+
+const [food, number] = resturant.order(2, 0);
+console.log(food, number);
