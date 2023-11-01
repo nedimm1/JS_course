@@ -32,3 +32,8 @@ console.log(main, secondery);
 
 const [food, number] = resturant.order(2, 0);
 console.log(food, number);
+
+const nested = [1, 1.5, [2, 3]]
+
+const [i,  ,j] = nested
+console.log(i, j)
