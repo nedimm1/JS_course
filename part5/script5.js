@@ -63,3 +63,10 @@ console.log(name, categories, arryay)
 
 const {menue = [], starterMenue: starters} = resturant;
 console.log(menue, starters)
+
+
+const obj = {a: 1, b: 2, c: 3};
+let a = 15
+let b = 21;
+({a, b} = obj);
+console.log(a, b)
