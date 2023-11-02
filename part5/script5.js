@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const resturant = {
     name: 'N.I.F',
@@ -60,3 +60,6 @@ console.log(name, categories, arryay)
 
 const {name: Ned, categories: facts, arryay: array} = resturant
 console.log(name, categories, arryay)
+
+const {menue = [], starterMenue: starters} = resturant;
+console.log(menue, starters)
