@@ -27,6 +27,7 @@ const resturant = {
     }
 };
 
+/*
 const arr = [1, 2, 3];
 const a = arr[0];
 const b = arr[1];
@@ -52,3 +53,7 @@ const nested = [1, 1.5, [2, 3]]
 
 const [i,  ,j] = nested
 console.log(i, j)
+*/
+
+const {name, categories, arryay} = resturant;
+console.log(name, categories, arryay)
