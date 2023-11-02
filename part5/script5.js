@@ -9,6 +9,21 @@ const resturant = {
     order: function(starterIndex, mainIndex) {
         // Use square brackets to create an array with the selected items
         return [this.starterMenue[starterIndex], this.arryay[mainIndex]];
+    },
+    openingHours: {
+        mon: {
+            open: 8,
+            close: 21
+        },
+        thu: {
+            open: 9,
+            close: 22
+        },
+        wed: {
+            open: 10,
+            close: 23
+        }
+
     }
 };
 
