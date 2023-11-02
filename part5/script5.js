@@ -57,3 +57,6 @@ console.log(i, j)
 
 const {name, categories, arryay} = resturant;
 console.log(name, categories, arryay)
+
+const {name: Ned, categories: facts, arryay: array} = resturant
+console.log(name, categories, arryay)
