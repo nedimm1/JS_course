@@ -26,8 +26,8 @@ const resturant = {
 
     },
 
-    orderMenue: function(obj){
-        console.log(obj)
+    orderMenue: function({time, addres, number, starterIndex}){
+        console.log(`${number} ${this.starterMenue[starterIndex]}'s will arrive at ${addres} at ${time}`)
     }
 };
 
