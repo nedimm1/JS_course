@@ -24,8 +24,19 @@ const resturant = {
             close: 23
         }
 
+    },
+
+    orderMenue: function(obj){
+        console.log(obj)
     }
 };
+
+resturant.orderMenue({
+    time: "20:30",
+    addres:"Washington street, Van Wert",
+    number: 3,
+    starterIndex: 2
+})
 
 /*
 const arr = [1, 2, 3];
@@ -73,3 +84,4 @@ console.log(a, b)
 
 const {wed: {open: o, close: c}} = resturant.openingHours
 console.log(o, c)
+
