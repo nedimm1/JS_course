@@ -70,3 +70,6 @@ let a = 15
 let b = 21;
 ({a, b} = obj);
 console.log(a, b)
+
+const {wed: {open: o, close: c}} = resturant.openingHours
+console.log(o, c)
