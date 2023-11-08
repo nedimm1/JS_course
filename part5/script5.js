@@ -95,3 +95,6 @@ const doThis = [1, 2, ...arr]
 console.log(doThis)
 
 console.log(...doThis)
+
+const newArryay = [...resturant.arryay, 'six']
+console.log(newArryay)
