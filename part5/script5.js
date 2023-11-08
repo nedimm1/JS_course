@@ -91,10 +91,14 @@ const arr = [3, 4, 5]
 const insteadOfThis = [1, 2, arr[0], arr[1], arr[2]]
 console.log(insteadOfThis)
 
+
 const doThis = [1, 2, ...arr]
 console.log(doThis)
 
 console.log(...doThis)
 
-const newArryay = [...resturant.arryay, 'six']
+const newArryay = [...resturant.arryay, 'six', 'seven']
 console.log(newArryay)
+
+const combine = [...resturant.arryay, ...newArryay]
+console.log(combine)
