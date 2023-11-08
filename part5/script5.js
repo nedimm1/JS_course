@@ -6,7 +6,7 @@ const resturant = {
     categories: ["from Ohio", "Halal", "made up", "adfjas'ljfasio;j", "a;kdjfha;weouhngva"],
     starterMenue: ["American breakfast", "English breakfast", "French breakfast", "Turkish breakfast"],
     arryay: ['one', 'two', 'three', 'four', 'five'],
-    order: function(starterIndex, mainIndex) {
+    order: function (starterIndex, mainIndex) {
         // Use square brackets to create an array with the selected items
         return [this.starterMenue[starterIndex], this.arryay[mainIndex]];
     },
@@ -26,7 +26,7 @@ const resturant = {
 
     },
 
-    orderMenue: function({time, addres, number, starterIndex}){
+    orderMenue: function ({ time, addres, number, starterIndex }) {
         console.log(`${number} ${this.starterMenue[starterIndex]}'s will arrive at ${addres} at ${time}`)
     }
 };
@@ -102,3 +102,8 @@ console.log(newArryay)
 
 const combine = [...resturant.arryay, ...newArryay]
 console.log(combine)
+
+const name = 'Nedim'
+const lastname = "Muminovic"
+const letters = [...name, "", ...lastname]
+console.log(letters)
