@@ -28,6 +28,10 @@ const resturant = {
 
     orderMenue: function ({ time, addres, number, starterIndex }) {
         console.log(`${number} ${this.starterMenue[starterIndex]}'s will arrive at ${addres} at ${time}`)
+    },
+
+    condiments: function(con1, con2, con3){
+        console.log(con1, con2, con3)
     }
 };
 
@@ -107,3 +111,7 @@ const name = 'Nedim'
 const lastname = "Muminovic"
 const letters = [...name, "", ...lastname]
 console.log(letters)
+
+const pickCondiments = [prompt("chose condiment1: "), prompt("chose condiment2: "), prompt("chose condiment3: ")]
+
+resturant.condiments(...pickCondiments)
