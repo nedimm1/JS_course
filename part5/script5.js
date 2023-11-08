@@ -31,6 +31,7 @@ const resturant = {
     }
 };
 
+/*
 resturant.orderMenue({
     time: "20:30",
     addres:"Washington street, Van Wert",
@@ -65,7 +66,7 @@ const nested = [1, 1.5, [2, 3]]
 const [i,  ,j] = nested
 console.log(i, j)
 */
-
+/*
 const {name, categories, arryay} = resturant;
 console.log(name, categories, arryay)
 
@@ -84,4 +85,13 @@ console.log(a, b)
 
 const {wed: {open: o, close: c}} = resturant.openingHours
 console.log(o, c)
+*/
 
+const arr = [3, 4, 5]
+const insteadOfThis = [1, 2, arr[0], arr[1], arr[2]]
+console.log(insteadOfThis)
+
+const doThis = [1, 2, ...arr]
+console.log(doThis)
+
+console.log(...doThis)
