@@ -116,6 +116,7 @@ const pickCondiments = [prompt("chose condiment1: "), prompt("chose condiment2: 
 
 resturant.condiments(...pickCondiments)*/
 
+/*
 const [a, b, ...others] = [1, 2, 3, 4, 5]
 
 console.log(a, b, others)
@@ -128,3 +129,9 @@ function add(...numbers){
 
 let x = [22, 43, 52, 66]
 add(...x)
+*/
+//if the first one is true, it will console log it
+console.log(3 || 'nedim')
+
+//if none are ture, it will console log the lest one
+console.log(undefined || null)
