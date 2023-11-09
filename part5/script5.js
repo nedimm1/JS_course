@@ -119,3 +119,9 @@ resturant.condiments(...pickCondiments)*/
 const [a, b, ...others] = [1, 2, 3, 4, 5]
 
 console.log(a, b, others)
+
+function add(...numbers){
+console.log(...numbers)
+}
+
+add(1, 2, 3, 4, 5)
