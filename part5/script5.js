@@ -90,7 +90,7 @@ console.log(a, b)
 const {wed: {open: o, close: c}} = resturant.openingHours
 console.log(o, c)
 */
-
+/*
 const arr = [3, 4, 5]
 const insteadOfThis = [1, 2, arr[0], arr[1], arr[2]]
 console.log(insteadOfThis)
@@ -114,4 +114,8 @@ console.log(letters)
 
 const pickCondiments = [prompt("chose condiment1: "), prompt("chose condiment2: "), prompt("chose condiment3: ")]
 
-resturant.condiments(...pickCondiments)
+resturant.condiments(...pickCondiments)*/
+
+const [a, b, ...others] = [1, 2, 3, 4, 5]
+
+console.log(a, b, others)
