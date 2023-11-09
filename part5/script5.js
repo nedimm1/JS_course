@@ -135,3 +135,11 @@ console.log(3 || 'nedim')
 
 //if none are ture, it will console log the lest one
 console.log(undefined || null)
+
+//instead of checking for an element like this:
+const check = resturant.guestNumber ? resturant.guestNumber : resturant.guestNumber = 10
+console.log(check)
+
+//do this:
+const check2 = resturant.guestNumber || 10
+console.log(check2)
