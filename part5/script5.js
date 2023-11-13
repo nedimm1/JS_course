@@ -164,7 +164,7 @@ console.log(betterCheck)*/
 
 const rest1 = {
     name: "Taxim",
-    guests: 10
+    guests: 0
 }
 
 const rest2 = {
@@ -172,10 +172,15 @@ const rest2 = {
     owner: 'Me'
 }
 
-rest1.guests ||= 10;
+//rest1.guests ||= 10;
 
-rest2.guests ||= 10;
+//rest2.guests ||= 10;
+
+rest1.guests ??= 10;
+
+rest2.guests ??= 10;
 
 console.log(rest1)
 
 console.log(rest2)
+
