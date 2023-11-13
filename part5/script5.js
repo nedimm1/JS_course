@@ -130,6 +130,7 @@ function add(...numbers){
 let x = [22, 43, 52, 66]
 add(...x)
 */
+/*
 console.log('--- OR ---')
 //if the first one is true, it will console log it
 console.log(3 || 'nedim')
@@ -147,7 +148,16 @@ console.log(check2)
 
 console.log('--- AND ---')
 
-// searches until it findes a truethy value
-console.log(0 && 'Nedim')
+
+console.log(false && 'Nedim')
 //if the first value is true it will continue until it finds a false value
 console.log('Nedim' && 3 && 'blbla' && undefined && 'blabla')
+*/
+
+resturant.guestNumber = 0
+
+const check2 = resturant.guestNumber || 10
+console.log(check2)
+
+const betterCheck = resturant.guestNumber ?? 10
+console.log(betterCheck)
