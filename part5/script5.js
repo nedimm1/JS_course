@@ -153,11 +153,29 @@ console.log(false && 'Nedim')
 //if the first value is true it will continue until it finds a false value
 console.log('Nedim' && 3 && 'blbla' && undefined && 'blabla')
 */
-
+/*
 resturant.guestNumber = 0
 
 const check2 = resturant.guestNumber || 10
 console.log(check2)
 
 const betterCheck = resturant.guestNumber ?? 10
-console.log(betterCheck)
+console.log(betterCheck)*/
+
+const rest1 = {
+    name: "Taxim",
+    guests: 10
+}
+
+const rest2 = {
+    name: "NIF",
+    owner: 'Me'
+}
+
+rest1.guests ||= 10;
+
+rest2.guests ||= 10;
+
+console.log(rest1)
+
+console.log(rest2)
