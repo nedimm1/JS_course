@@ -189,4 +189,4 @@ const menue = [...resturant.starterMenue]
 
 for(let item of menue) console.log(item)
 
-for(let item of menue.entries()) console.log(item)
+for(let [item, el] of menue.entries()) console.log(`${item + 1}: ${el}`)
