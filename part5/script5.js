@@ -161,7 +161,7 @@ console.log(check2)
 
 const betterCheck = resturant.guestNumber ?? 10
 console.log(betterCheck)*/
-
+/*
 const rest1 = {
     name: "Taxim",
     guests: 0
@@ -183,4 +183,8 @@ rest2.guests ??= 10;
 console.log(rest1)
 
 console.log(rest2)
+*/
 
+const menue = [...resturant.starterMenue]
+
+for(let item of menue) console.log(item)
