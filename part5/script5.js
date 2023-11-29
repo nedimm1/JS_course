@@ -184,9 +184,16 @@ console.log(rest1)
 
 console.log(rest2)
 */
-
+/*
 const menue = [...resturant.starterMenue]
 
 for(let item of menue) console.log(item)
 
-for(let [item, el] of menue.entries()) console.log(`${item + 1}: ${el}`)
+for(let [item, el] of menue.entries()) console.log(`${item + 1}: ${el}`)*/
+
+//instead of checking if the property exists like this:
+
+if(resturant.openingHours.sun.open && resturant.openingHours.mon) console.log(resturant.openingHours.sun)
+
+//do this
+console.log(resturant.openingHours.sun ?.open)
