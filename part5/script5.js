@@ -210,4 +210,4 @@ console.log(openStr)*/
 
 const entires = Object.entries(openingHours)
 
-for(let day of entires) console.log(day)
+for(let [key, {open, close}] of entires) console.log(`on ${key}, we are open at ${open}, and we close at ${close}`)
