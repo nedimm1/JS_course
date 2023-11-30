@@ -199,8 +199,15 @@ if(resturant.openingHours.sun.open && resturant.openingHours.mon) console.log(re
 
 //do this
 console.log(resturant.openingHours.sun ?.open)*/
+/*
 const properties = Object.keys(openingHours);
 
-console.log(`we are open on ${properties.length} days:`)
+let openStr = `we are open on ${properties.length} days: `
 
-for(let day of Object.keys(openingHours)) console.log(day)
+for(let day of Object.keys(openingHours)) openStr += `${day}, `
+
+console.log(openStr)*/
+
+const entires = Object.entries(openingHours)
+
+for(let day of entires) console.log(day)
