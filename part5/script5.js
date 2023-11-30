@@ -1,5 +1,20 @@
 'use strict'
 
+const openingHours = {
+    mon: {
+        open: 8,
+        close: 21
+    },
+    thu: {
+        open: 9,
+        close: 22
+    },
+    wed: {
+        open: 10,
+        close: 23
+    }
+}
+
 const resturant = {
     name: 'N.I.F',
     location: "Washington street, Van Wert, Ohio, USA",
@@ -10,21 +25,7 @@ const resturant = {
         // Use square brackets to create an array with the selected items
         return [this.starterMenue[starterIndex], this.arryay[mainIndex]];
     },
-    openingHours: {
-        mon: {
-            open: 8,
-            close: 21
-        },
-        thu: {
-            open: 9,
-            close: 22
-        },
-        wed: {
-            open: 10,
-            close: 23
-        }
-
-    },
+    openingHours,
 
     orderMenue: function ({ time, addres, number, starterIndex }) {
         console.log(`${number} ${this.starterMenue[starterIndex]}'s will arrive at ${addres} at ${time}`)
@@ -191,9 +192,13 @@ for(let item of menue) console.log(item)
 
 for(let [item, el] of menue.entries()) console.log(`${item + 1}: ${el}`)*/
 
+/*
 //instead of checking if the property exists like this:
 
 if(resturant.openingHours.sun.open && resturant.openingHours.mon) console.log(resturant.openingHours.sun)
 
 //do this
-console.log(resturant.openingHours.sun ?.open)
+console.log(resturant.openingHours.sun ?.open)*/
+const properties = Object.keys(openingHours);
+
+for(let day of Object.keys(openingHours)) console.log(day)
