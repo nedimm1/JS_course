@@ -80,7 +80,7 @@ console.log(allPlayers)
 const [gk, ...fieldPlayers] = team1
 console.log(gk, fieldPlayers)
 
-
+/*
 
 const playersFinal = ['Thiago', 'Coutinho', 'Perisic', ...team1]
 console.log(playersFinal)
@@ -100,4 +100,4 @@ function printGoals(...players) {
 const x = ['Davies', 'Muller', 'Lewandowski', 'Kimmich']
 printGoals(...x)
 
-console.log(team1 < team2 || team2 < team1 || team1 == team2)
+console.log(team1 < team2 || team2 < team1 || team1 == team2)*/
