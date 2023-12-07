@@ -227,3 +227,7 @@ console.log(orderSet)
 //console.log(orderSet.clear())
 
 for(const order of orderSet) console.log(order)
+
+const staff = ['waiter', 'maneger', 'cook', 'waiter', 'cook']
+const staffTotal = [...new Set(staff)]
+console.log(staffTotal)
