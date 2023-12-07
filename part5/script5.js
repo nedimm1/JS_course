@@ -216,3 +216,11 @@ const orderSet = new Set(['pizza', 'pasta', 'pizza', 'rissoto', 'pasta'])
 console.log(orderSet)
 
 console.log(new Set("Nedim"))
+
+console.log(orderSet.size)
+console.log(orderSet.has('Bread'))
+console.log(orderSet.has('pizza'))
+console.log(orderSet.add('Water'))
+console.log(orderSet.add('Water'))
+console.log(orderSet.delete('Water'))
+console.log(orderSet)
