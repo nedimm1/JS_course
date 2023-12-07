@@ -224,3 +224,6 @@ console.log(orderSet.add('Water'))
 console.log(orderSet.add('Water'))
 console.log(orderSet.delete('Water'))
 console.log(orderSet)
+//console.log(orderSet.clear())
+
+for(const order of orderSet) console.log(order)
