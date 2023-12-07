@@ -207,7 +207,12 @@ let openStr = `we are open on ${properties.length} days: `
 for(let day of Object.keys(openingHours)) openStr += `${day}, `
 
 console.log(openStr)*/
-
+/*
 const entires = Object.entries(openingHours)
 
-for(let [key, {open, close}] of entires) console.log(`on ${key}, we are open at ${open}, and we close at  ${close}`)
+for(let [key, {open, close}] of entires) console.log(`on ${key}, we are open at ${open}, and we close at  ${close}`)*/
+
+const orderSet = new Set(['pizza', 'pasta', 'pizza', 'rissoto', 'pasta'])
+console.log(orderSet)
+
+console.log(new Set("Nedim"))
