@@ -258,3 +258,7 @@ console.log(rest)
 //rest.clear()
 console.log(rest.size)
 console.log(rest.set('heading', document.querySelector('h1')))
+
+const arr = [1, 2, 3]
+rest.set('array', arr)
+console.log(rest.get('array'))
