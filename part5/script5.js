@@ -235,4 +235,13 @@ console.log(staffTotal)*/
 const rest = new Map();
 rest.set('name', 'N.I.F')
 
-console.log(rest)
+console.log(rest.set(1, 'one'))
+
+rest
+.set('categories', ['made up', 'form ohio', 'blblabla'])
+.set('location', 'Van Vert, Ohio, USA')
+.set('open', 9)
+.set('close', 22)
+
+console.log(rest.get(1))
+console.log(rest.get('open'), rest.get('close'))
