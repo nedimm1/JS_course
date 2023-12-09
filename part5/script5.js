@@ -242,6 +242,13 @@ rest
 .set('location', 'Van Vert, Ohio, USA')
 .set('open', 9)
 .set('close', 22)
+.set(true, 'we are open')
+.set(false, "we are closed")
 
 console.log(rest.get(1))
 console.log(rest.get('open'), rest.get('close'))
+
+const time = 10
+
+console.log(rest.get(time > rest.get('open') && time < rest.get('close')))
+
