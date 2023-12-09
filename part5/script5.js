@@ -211,7 +211,7 @@ console.log(openStr)*/
 const entires = Object.entries(openingHours)
 
 for(let [key, {open, close}] of entires) console.log(`on ${key}, we are open at ${open}, and we close at  ${close}`)*/
-
+/*
 const orderSet = new Set(['pizza', 'pasta', 'pizza', 'rissoto', 'pasta'])
 console.log(orderSet)
 
@@ -230,4 +230,9 @@ for(const order of orderSet) console.log(order)
 
 const staff = ['waiter', 'maneger', 'cook', 'waiter', 'cook']
 const staffTotal = [...new Set(staff)]
-console.log(staffTotal)
+console.log(staffTotal)*/
+
+const rest = new Map();
+rest.set('name', 'N.I.F')
+
+console.log(rest)
