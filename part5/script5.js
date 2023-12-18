@@ -31,7 +31,7 @@ const resturant = {
         console.log(`${number} ${this.starterMenue[starterIndex]}'s will arrive at ${addres} at ${time}`)
     },
 
-    condiments: function(con1, con2, con3){
+    condiments: function (con1, con2, con3) {
         console.log(con1, con2, con3)
     }
 };
@@ -286,3 +286,16 @@ console.log(airline.slice(0, 3))
 console.log(airline.slice(0, airline.indexOf(' ') + 1))
 
 console.log(airline.slice(-6))
+
+const planeSeat = function (seat) {
+    const s = seat.slice(-1)
+    if (s == 'E' || s == "B") {
+        console.log('tough luck')
+    }else {
+        console.log('NICE')
+    }
+}
+
+planeSeat('11B')
+planeSeat('23C')
+planeSeat('3E')
