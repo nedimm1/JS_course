@@ -278,3 +278,11 @@ console.log('UuUuUu...blablabla'.length)
 console.log(airline.indexOf('r'))
 console.log(airline.lastIndexOf('r'))
 console.log(airline.indexOf('Serbia'))
+
+
+console.log(airline.slice(4))
+console.log(airline.slice(0, 3))
+
+console.log(airline.slice(0, airline.indexOf(' ') + 1))
+
+console.log(airline.slice(-6))
