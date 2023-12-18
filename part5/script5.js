@@ -232,6 +232,7 @@ const staff = ['waiter', 'maneger', 'cook', 'waiter', 'cook']
 const staffTotal = [...new Set(staff)]
 console.log(staffTotal)*/
 
+/*
 const rest = new Map();
 rest.set('name', 'N.I.F')
 
@@ -261,4 +262,13 @@ console.log(rest.set('heading', document.querySelector('h1')))
 
 const arr = [1, 2, 3]
 rest.set('array', arr)
-console.log(rest.get('array'))
+console.log(rest.get('array'))*/
+
+const airline = "air Serbia"
+const plane = 'A320'
+
+console.log(airline[0])
+console.log(plane[0])
+console.log(airline[4])
+console.log(plane[2])
+
