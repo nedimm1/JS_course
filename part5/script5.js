@@ -272,3 +272,9 @@ console.log(plane[0])
 console.log(airline[4])
 console.log(plane[2])
 
+console.log(airline.length)
+console.log('UuUuUu...blablabla'.length)
+
+console.log(airline.indexOf('r'))
+console.log(airline.lastIndexOf('r'))
+console.log(airline.indexOf('Serbia'))
