@@ -300,7 +300,7 @@ const planeSeat = function (seat) {
 planeSeat('11B')
 planeSeat('23C')
 planeSeat('3E')*/
-
+/*
 const airline = "air Serbia"
 
 console.log(airline.toLowerCase(), airline.toUpperCase())
@@ -316,4 +316,11 @@ let email = 'blablabla@nedim.com'
 let otherEmail = ' Blablabla@nedim.com\n'
 
 let fixedEmail = otherEmail.trim().toLowerCase()
-console.log(fixedEmail == email)
+console.log(fixedEmail == email)*/
+
+let money = '69,9RSD'
+
+console.log(money.replace(',', '.').replace('RSD', "$"))
+
+let anouncement = 'Plane is taking off at 7, i repeat, plane is taking of at 7'
+console.log(anouncement.replace(/7/g, '10'))
