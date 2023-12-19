@@ -264,6 +264,7 @@ const arr = [1, 2, 3]
 rest.set('array', arr)
 console.log(rest.get('array'))*/
 
+/*
 const airline = "air Serbia"
 const plane = 'A320'
 
@@ -298,4 +299,8 @@ const planeSeat = function (seat) {
 
 planeSeat('11B')
 planeSeat('23C')
-planeSeat('3E')
+planeSeat('3E')*/
+
+const airline = "air Serbia"
+
+console.log(airline.toLowerCase(), airline.toUpperCase())
