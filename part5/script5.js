@@ -327,3 +327,5 @@ console.log(anouncement.replace(/7/g, '10'))
 
 console.log(airline.includes('air'))
 console.log(airline.startsWith('air'))
+
+if(airline.startsWith('air') && airline.endsWith('Serbia')) console.log('its air Serbia')
