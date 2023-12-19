@@ -309,3 +309,11 @@ let name = "NeDiM"
 let lowerName = name.toLowerCase
 let fixedName = name[0].toUpperCase() + name.toLowerCase().slice(1)
 console.log(fixedName)
+
+//compareing the email
+
+let email = 'blablabla@nedim.com'
+let otherEmail = ' Blablabla@nedim.com\n'
+
+let fixedEmail = otherEmail.trim().toLowerCase()
+console.log(fixedEmail == email)
