@@ -35,7 +35,7 @@ const resturant = {
         console.log(con1, con2, con3)
     }
 };
-
+const airline = "air Serbia"
 /*
 resturant.orderMenue({
     time: "20:30",
@@ -324,3 +324,6 @@ console.log(money.replace(',', '.').replace('RSD', "$"))
 
 let anouncement = 'Plane is taking off at 7, i repeat, plane is taking of at 7'
 console.log(anouncement.replace(/7/g, '10'))
+
+console.log(airline.includes('air'))
+console.log(airline.startsWith('air'))
