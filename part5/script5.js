@@ -304,3 +304,8 @@ planeSeat('3E')*/
 const airline = "air Serbia"
 
 console.log(airline.toLowerCase(), airline.toUpperCase())
+
+let name = "NeDiM"
+let lowerName = name.toLowerCase
+let fixedName = name[0].toUpperCase() + name.toLowerCase().slice(1)
+console.log(fixedName)
