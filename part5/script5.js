@@ -337,3 +337,7 @@ let nameArray = 'Nedim Muminovic'.split(' ')
 let nameNormal = nameArray.join(' ')
 
 console.log(nameNormal)
+
+const [firstName, lastName] = nameArray
+console.log(firstName)
+console.log(lastName)
