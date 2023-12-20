@@ -317,7 +317,7 @@ let otherEmail = ' Blablabla@nedim.com\n'
 
 let fixedEmail = otherEmail.trim().toLowerCase()
 console.log(fixedEmail == email)*/
-
+/*
 let money = '69,9RSD'
 
 console.log(money.replace(',', '.').replace('RSD', "$"))
@@ -328,4 +328,12 @@ console.log(anouncement.replace(/7/g, '10'))
 console.log(airline.includes('air'))
 console.log(airline.startsWith('air'))
 
-if(airline.startsWith('air') && airline.endsWith('Serbia')) console.log('its air Serbia')
+if(airline.startsWith('air') && airline.endsWith('Serbia')) console.log('its air Serbia')*/
+
+console.log('array.of.strings'.split('.'))
+console.log('Nedim Muminovic'.split(' '))
+
+let nameArray = 'Nedim Muminovic'.split(' ')
+let nameNormal = nameArray.join(' ')
+
+console.log(nameNormal)
