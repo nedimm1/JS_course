@@ -330,6 +330,7 @@ console.log(airline.startsWith('air'))
 
 if(airline.startsWith('air') && airline.endsWith('Serbia')) console.log('its air Serbia')*/
 
+/*
 console.log('array.of.strings'.split('.'))
 console.log('Nedim Muminovic'.split(' '))
 
@@ -354,4 +355,10 @@ const capitalizeName = function (name) {
 };
 
 
-capitalizeName('onika tanya maraj petty')
+capitalizeName('onika tanya maraj petty')*/
+
+const string = 'blablabla'
+
+console.log(string.padStart(15, '*'))
+
+console.log('Nedim'.padEnd('10', '*'))
