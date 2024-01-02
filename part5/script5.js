@@ -362,3 +362,13 @@ const string = 'blablabla'
 console.log(string.padStart(15, '*'))
 
 console.log('Nedim'.padEnd('10', '*'))
+
+
+function maskedCreditCard(numbers){
+   let str = numbers + ''
+   let last = str.slice(-4)
+   return last.padStart(str.length, '*')
+}
+
+console.log(maskedCreditCard(423548436565))
+console.log(maskedCreditCard('655424246547'))
