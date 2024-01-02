@@ -372,3 +372,13 @@ function maskedCreditCard(numbers){
 
 console.log(maskedCreditCard(423548436565))
 console.log(maskedCreditCard('655424246547'))
+
+let message = 'bad weather... all flights delayed... '
+
+console.log(message.repeat(5))
+
+function message2(n) {
+  console.log(`there are ${n} planes in the air ${'🛫'.repeat(n)}`)
+}
+
+message2(5)
