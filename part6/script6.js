@@ -2,7 +2,7 @@
 
 const bookings = []
 
-function bookingSeat(flight, passengerNum = 1, price = 199) {
+function bookingSeat(flight, passengerNum = 1, price = 199 * passengerNum) {
    
 //    //ES5 
 //    passengerNum = passengerNum || 1
@@ -17,3 +17,5 @@ function bookingSeat(flight, passengerNum = 1, price = 199) {
 }
 
 bookingSeat("LH123")
+bookingSeat("LH123", 3)
+bookingSeat("LH123", undefined, 200)
