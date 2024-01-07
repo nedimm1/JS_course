@@ -2,11 +2,11 @@
 
 const bookings = []
 
-function bookingSeat(flight, passengerNum, price) {
+function bookingSeat(flight, passengerNum = 1, price = 199) {
    
-   //ES5 
-   passengerNum = passengerNum || 1
-   price = price || 199 
+//    //ES5 
+//    passengerNum = passengerNum || 1
+//    price = price || 199 
 
   let booking = {
     flight, 
