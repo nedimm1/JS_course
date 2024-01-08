@@ -38,10 +38,10 @@ greetingFunction("hey")("Nedim")
 
 */
 //same thing but with arrow functions
-let greetingFunction = (greeting) => {
-    return (name) => {
-        console.log(`${greeting}  ${name}`)
-    }
+let greetingFunction = greeting => name =>{
+
+ console.log(`${greeting}  ${name}`)
+    
 }
 
 const greet = greetingFunction("hey")
