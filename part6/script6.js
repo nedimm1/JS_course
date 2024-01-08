@@ -50,6 +50,8 @@ greet("Nedim")
 
 greetingFunction("hey")("Nedim")*/
 
+//Call Aplay Bind
+//Call:
 //here is an object
 const airSerbia = {
     name: "Air Serbia",
@@ -78,3 +80,12 @@ const euroWings = {
 airSerbia.book.call(euroWings, 55, "Jason Statement")
 
 console.log(euroWings)
+
+//Aplay
+//basiclly the smae thing, but for arrays
+const flightData = [554, "Rayan Renolds"]
+airSerbia.book.apply(euroWings, flightData)
+console.log(euroWings)
+
+//nobody realy uses this anymore, so you can just do this: 
+airSerbia.book.call(euroWings, ...flightData)
