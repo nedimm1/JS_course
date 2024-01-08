@@ -21,7 +21,7 @@ bookingSeat("LH123")
 bookingSeat("LH123", 3)
 bookingSeat("LH123", undefined, 200)*/
 
-
+/*
 //Functions returning functions
 function greetingFunction(greeting) {
     return function(name){
@@ -34,4 +34,17 @@ const greet = greetingFunction('hey')
 greet('Nedim')
 
 //the second way
+greetingFunction("hey")("Nedim")
+
+*/
+//same thing but with arrow functions
+let greetingFunction = (greeting) => {
+    return (name) => {
+        console.log(`${greeting}  ${name}`)
+    }
+}
+
+const greet = greetingFunction("hey")
+greet("Nedim")
+
 greetingFunction("hey")("Nedim")
