@@ -38,6 +38,7 @@ greetingFunction("hey")("Nedim")
 
 */
 //same thing but with arrow functions
+/*
 let greetingFunction = greeting => name =>{
 
  console.log(`${greeting}  ${name}`)
@@ -47,4 +48,33 @@ let greetingFunction = greeting => name =>{
 const greet = greetingFunction("hey")
 greet("Nedim")
 
-greetingFunction("hey")("Nedim")
+greetingFunction("hey")("Nedim")*/
+
+//here is an object
+const airSerbia = {
+    name: "Air Serbia",
+    iataCode: "JU",
+    bookings: [],
+    book(flightNum, name) {
+      console.log(`${name} took a flight on the plane ${this.iataCode}${flightNum}`)
+
+      this.bookings.push(flightNum, name)
+    },
+    
+}
+
+console.log(airSerbia)
+//now how do i use the same method in a diferent object?
+
+airSerbia.book(223, "Nedim Muminovic")
+
+const euroWings = {
+    name: "Euro Wings",
+    iataCode: 'EW',
+    bookings: [],
+}
+
+//like this:
+airSerbia.book.call(euroWings, 55, "Jason Statement")
+
+console.log(euroWings)
