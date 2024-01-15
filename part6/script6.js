@@ -100,3 +100,8 @@ const bookEW = airSerbia.book.bind(euroWings)
 bookEW("33", "Nedim")
 
 bookEW("39", "Jason")
+
+//specific flights 
+const bookEW23 = airSerbia.book.bind(euroWings, 23)
+
+bookEW23("Nedim")
