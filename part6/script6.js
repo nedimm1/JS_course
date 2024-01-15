@@ -89,3 +89,14 @@ console.log(euroWings)
 
 //nobody realy uses this anymore, so you can just do this: 
 airSerbia.book.call(euroWings, ...flightData)
+
+//Bind
+//controls what the this keyword is refearing too
+
+//in case we need to reuse the book function more times:
+
+const bookEW = airSerbia.book.bind(euroWings)
+
+bookEW("33", "Nedim")
+
+bookEW("39", "Jason")
