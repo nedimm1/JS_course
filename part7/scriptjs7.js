@@ -26,3 +26,7 @@ console.log(arr4)
 //4.Reverse
 //speakes for itself
 console.log(arr.reverse())
+
+//5.join
+//makes a string out of the array elements
+console.log(arr.join(" - "))
