@@ -22,3 +22,7 @@ console.log(arr3)
 //same as this:
 const arr4 = [...arr, ...arr2]
 console.log(arr4)
+
+//4.Reverse
+//speakes for itself
+console.log(arr.reverse())
