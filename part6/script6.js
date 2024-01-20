@@ -53,6 +53,7 @@ greetingFunction("hey")("Nedim")*/
 //Call Aplay Bind
 //Call:
 //here is an object
+/*
 const airSerbia = {
     name: "Air Serbia",
     iataCode: "JU",
@@ -104,4 +105,13 @@ bookEW("39", "Jason")
 //specific flights 
 const bookEW23 = airSerbia.book.bind(euroWings, 23)
 
-bookEW23("Nedim")
+bookEW23("Nedim")*/
+
+//immediately invoked function expresions(IIFE)
+//functions that you can only use once 
+(function() {
+  console.log('only once')
+})();
+
+//arrow function
+(() => console.log("only once"))()
