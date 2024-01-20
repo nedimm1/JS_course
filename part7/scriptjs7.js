@@ -12,5 +12,13 @@ console.log(arr.slice(1, -1))
 
 //2.Splice
 //slice + mutation
-console.log(arr.splice(-2))
+const arr2 = arr.splice(-2)
 console.log(arr)
+
+//3.Concat
+//joins the array
+const arr3 = arr.concat(arr2)
+console.log(arr3)
+//same as this:
+const arr4 = [...arr, ...arr2]
+console.log(arr4)
