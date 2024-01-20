@@ -9,3 +9,8 @@ console.log(arr.slice(2))
 console.log(arr.slice(1, 3))
 console.log(arr.slice(-1))
 console.log(arr.slice(1, -1))
+
+//2.Splice
+//slice + mutation
+console.log(arr.splice(-2))
+console.log(arr)
