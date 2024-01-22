@@ -30,3 +30,21 @@ console.log(arr.reverse())
 //5.join
 //makes a string out of the array elements
 console.log(arr.join(" - "))
+
+//At methode
+//used to find indexes
+console.log(arr4.at(0))
+//same as:
+console.log(arr4[0])
+
+//finding the last element
+
+//instead of doing this:
+console.log(arr4.length - 1)
+console.log(arr4.slice(-1)[0])
+
+//do this:
+console.log(arr4.at(-1))
+
+//works also with strings:
+console.log('Nedim'.at(-1))
