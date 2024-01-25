@@ -48,3 +48,26 @@ console.log(arr4.at(-1))
 
 //works also with strings:
 console.log('Nedim'.at(-1))
+
+//forEach 
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]
+
+//instead of this:
+for(let movement of movements){
+  if(movement > 0){
+    console.log(`you deposited${movement}`)
+  }else{
+    console.log(`you withdrew${movement}`)
+  }
+}
+
+console.log("----------------------------------------------------")
+//do this
+movements.forEach(function(movement){
+    if(movement > 0){
+        console.log(`you deposited${movement}`)
+      }else{
+        console.log(`you withdrew${movement}`)
+      }
+})
