@@ -83,3 +83,11 @@ let conversion = movements.map(function(mov){
 })
 
 console.log(conversion)
+
+//in arrow function
+let arrowConversion = movements.map(mov => {
+  return mov * usdToRsd
+ })
+
+console.log(arrowConversion)
+ 
