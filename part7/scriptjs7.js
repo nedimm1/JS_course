@@ -71,3 +71,15 @@ movements.forEach(function(movement){
         console.log(`you withdrew${movement}`)
       }
 })
+
+
+//Data transformations
+
+//Map methode
+const usdToRsd = 100;
+
+let conversion = movements.map(function(mov){
+ return mov * usdToRsd
+})
+
+console.log(conversion)
