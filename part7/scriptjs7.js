@@ -90,4 +90,20 @@ let arrowConversion = movements.map(mov => {
  })
 
 console.log(arrowConversion)
+
+//filter Methode
+
+//instead of doing this:
+let deposits = []
+for(let i of movements){
+  if(i > 0) deposits.push(i)
+}
  
+console.log(deposits)
+
+//do this:
+const depositsFilter = movements.filter(function(mov){
+  return mov > 0
+})
+
+console.log(depositsFilter)
