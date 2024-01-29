@@ -107,3 +107,20 @@ const depositsFilter = movements.filter(function(mov){
 })
 
 console.log(depositsFilter)
+
+//reduce methode:
+//reduces the element to a single value
+
+
+/*acc: accumulator, The accumulated result of the callback function.
+cur: currentValue, The current element being processed in the array.
+i: currentIndex, The index of the current element being processed.
+arr: array The array on which reduce was called.*/
+
+//acc -> snowbal
+
+const total = movements.reduce(function(acc, cur, i, arr){
+  return acc + cur
+}, 0)//defualt value of the acc
+
+console.log(total)
