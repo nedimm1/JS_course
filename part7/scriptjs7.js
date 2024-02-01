@@ -128,11 +128,14 @@ console.log(total)
 //chaining array methodes
 
 const depositedUsdtoRsd = movements.filter(function(mov){
-  return mov > 0
-}).map(function(mov){
+  return mov < 0
+}).map(function(mov, i, arr){
+  console.log(mov, arr)
   return mov * usdToRsd
 }).reduce(function(acc, cur){
   return acc + cur
 }, 0)
 
 console.log(depositedUsdtoRsd)
+
+//the chain only continues if the value is an array
