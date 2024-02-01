@@ -124,3 +124,15 @@ const total = movements.reduce(function(acc, cur, i, arr){
 }, 0)//defualt value of the acc
 
 console.log(total)
+
+//chaining array methodes
+
+const depositedUsdtoRsd = movements.filter(function(mov){
+  return mov > 0
+}).map(function(mov){
+  return mov * usdToRsd
+}).reduce(function(acc, cur){
+  return acc + cur
+}, 0)
+
+console.log(depositedUsdtoRsd)
