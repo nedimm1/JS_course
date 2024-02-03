@@ -15,3 +15,10 @@ if (ingrediants.includes("spinach")) {
     clearTimeout(pizzaDelivery);
     console.log('sorry we dont have spinach.');
 }
+
+//setInterval
+
+setInterval(function(){
+    let now = new Date()
+    console.log(now)
+}, 1000)
