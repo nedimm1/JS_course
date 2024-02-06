@@ -42,3 +42,16 @@ message.style.height = 70 + "px"
 message.style.width = "110%"
 
 document.documentElement.style.setProperty("--color-primary", 'orangered')
+
+//Attributes
+const logo = document.querySelector(".nav__logo")
+console.log(logo.alt)
+console.log(logo.src)
+console.log(logo.className)
+
+//non standard
+console.log(logo.getAttribute("designer"))
+
+logo.setAttribute("company", "Neds International")
+
+console.log(logo.getAttribute("company"))
