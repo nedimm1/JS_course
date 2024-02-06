@@ -33,3 +33,12 @@ header.append(message)//below the header
 document.querySelector('.btn--close-cookie').addEventListener('click', function(){
   message.remove()
 })
+
+//styles
+message.style.backgroundColor = "black"
+
+message.style.height = 70 + "px"
+
+message.style.width = "110%"
+
+document.documentElement.style.setProperty("--color-primary", 'orangered')
