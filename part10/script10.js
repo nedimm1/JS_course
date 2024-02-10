@@ -11,3 +11,7 @@ function Person(firstName, lastName){
 const me = new Person('Nedim', "Muminovic")
 
 console.log(me)
+
+const jeff = "jeff"
+
+console.log(jeff instanceof Person, me instanceof Person)
