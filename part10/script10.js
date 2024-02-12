@@ -23,3 +23,6 @@ Person.prototype.calcAge = function(){
 }
 
 me.calcAge()
+
+console.log(me.__proto__)
+console.log(Person.prototype.isPrototypeOf(me))
