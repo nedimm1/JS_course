@@ -26,3 +26,7 @@ me.calcAge()
 
 console.log(me.__proto__)
 console.log(Person.prototype.isPrototypeOf(me))
+
+Person.prototype.species = "human";
+
+console.log(me.species)
