@@ -30,3 +30,18 @@ console.log(Person.prototype.isPrototypeOf(me))
 Person.prototype.species = "human";
 
 console.log(me.species)
+
+//classes
+
+class PersonCl{
+  constructor(firstName, birthYear){
+    this.firstName = firstName
+    this.birthYear = birthYear
+  }
+
+
+}
+
+const me2 = new PersonCl('Nedim', 2008)
+
+console.log(me2)
