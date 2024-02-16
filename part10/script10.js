@@ -39,9 +39,19 @@ class PersonCl{
     this.birthYear = birthYear
   }
 
-
+  calcAge(){
+    console.log(2024 - this.birthYear)
+  }
 }
 
 const me2 = new PersonCl('Nedim', 2008)
 
 console.log(me2)
+
+me2.calcAge()
+
+PersonCl.prototype.greet = function(){
+  console.log(`Hey ${this.firstName}`)
+}
+
+me2.greet()
