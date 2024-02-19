@@ -55,3 +55,15 @@ PersonCl.prototype.greet = function(){
 }
 
 me2.greet()
+
+//object.create
+const personProto = {
+  calcAge(){
+    console.log(2024 - this.birthYear)
+  }
+}
+
+let me3 = Object.create(personProto)
+me3.name = 'Nedim'
+me3.birthYear = 2008
+console.log(me3)
