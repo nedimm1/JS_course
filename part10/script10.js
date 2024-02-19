@@ -60,6 +60,11 @@ me2.greet()
 const personProto = {
   calcAge(){
     console.log(2024 - this.birthYear)
+  },
+
+  init(name, birthYear){
+    this.name = name
+    this.birthYear = birthYear
   }
 }
 
@@ -67,3 +72,9 @@ let me3 = Object.create(personProto)
 me3.name = 'Nedim'
 me3.birthYear = 2008
 console.log(me3)
+me3.calcAge()
+
+//easier way of doing this:
+const sarah = Object.create(personProto)
+sarah.init('sarah', 2006)
+sarah.calcAge()
