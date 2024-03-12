@@ -54,10 +54,21 @@ getCountryAndNeighbor('kosovo')
 getCountryAndNeighbor('iceland')
 getCountryAndNeighbor('algeria')*/
 
-function getCountryData(country){
+function getCountryData(country) {
     fetch(`https://restcountries.com/v2/name/${country}`)
-    .then((response) => response.json())
-    .then((data) => renderCountry(data[0]))
+        .then((response) => response.json())
+        .then((data) => {
+            renderCountry(data[0])
+            const neighbor = data[0].borders[0]
+
+            if (!neighbor) return;
+
+
+            return fetch(`https://restcountries.com/v2/alpha/${neighbor}`)
+
+
+        }).then((response) => response.json())
+        .then((data) => renderCountry(data, 'neighbour'))
 }
 
 getCountryData('kosovo')
