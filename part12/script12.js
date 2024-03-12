@@ -22,7 +22,7 @@ function renderCountry(data, className = '') {
     countriesContainer.style.opacity = 1;
 }
 
-function getCountryAndNeighbor(country) {
+/*function getCountryAndNeighbor(country) {
     const request = new XMLHttpRequest();
     request.open('GET', `https://restcountries.com/v2/name/${country}`)
     request.send()
@@ -52,4 +52,12 @@ function getCountryAndNeighbor(country) {
 
 getCountryAndNeighbor('kosovo')
 getCountryAndNeighbor('iceland')
-getCountryAndNeighbor('algeria')
+getCountryAndNeighbor('algeria')*/
+
+function getCountryData(country){
+    fetch(`https://restcountries.com/v2/name/${country}`)
+    .then((response) => response.json())
+    .then((data) => renderCountry(data[0]))
+}
+
+getCountryData('kosovo')
