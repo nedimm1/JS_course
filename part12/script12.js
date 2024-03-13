@@ -19,7 +19,11 @@ function renderCountry(data, className = '') {
     </article>
     `;
     countriesContainer.insertAdjacentHTML('beforeend', html);
-    countriesContainer.style.opacity = 1;
+}
+
+function renderError(msg){
+    countriesContainer.insertAdjacentText('beforeend', msg)
+
 }
 
 /*function getCountryAndNeighbor(country) {
@@ -69,6 +73,16 @@ function getCountryData(country) {
 
         }).then((response) => response.json())
         .then((data) => renderCountry(data, 'neighbour'))
+        .catch((err) => {
+            console.error(`${err} 🚩`)
+            renderError('something went wrong! 🚩🚩🚩')
+        })
+        .finally(() => {
+            countriesContainer.style.opacity = 1;
+        })
 }
 
-getCountryData('kosovo')
+btn.addEventListener('click', function(){
+    getCountryData('kosovo')
+})
+
