@@ -124,6 +124,8 @@ TEST COORDINATES 2: -33.933, 18.474
 GOOD LUCK 😀
 */
 
+
+/*
 function whereAmI(lat, lng) {
     fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}&localityLanguage=en`)
         .then((response) => response.json())
@@ -163,5 +165,17 @@ btn.addEventListener('click', function(){
     //whereAmI( 52.508, 13.381)
     //whereAmI(19.037, 72.873)
 })
-   
+*/
 
+
+
+async function whereAmI(country){
+  const res = await fetch(`https://restcountries.com/v2/name/${country}`)
+  const data = await res.json()
+  countriesContainer.style.opacity = 1;
+  console.log(data)
+  renderCountry(data[0])
+}
+
+whereAmI('kosovo')
+console.log('FIRST')
