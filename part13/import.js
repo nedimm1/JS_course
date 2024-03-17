@@ -6,3 +6,7 @@ console.log(randomNum, randomNum2)*/
 import * as exports from "./export.js"
 
 exports.calcAge(2008)
+
+import message from "./export.js"
+
+message()

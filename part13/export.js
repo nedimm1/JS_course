@@ -11,3 +11,7 @@ export {randomNumber as randomNum, secondRandomNumber as randomNum2}
 export const calcAge =  function(birthYear){
   console.log(`you are ${2024 - birthYear} years old`)
 }
+
+export default function(){
+    console.log('message')
+}
