@@ -1,3 +1,3 @@
-import {name, surname, age} from './export.js'
+import {name as ime, surname as prezime, age as starost} from './export.js'
 
-console.log(name)
+console.log(ime, prezime, starost)
